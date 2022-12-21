@@ -219,36 +219,33 @@ var country = [
   "Zimbabwe",
 ];
 
-var pick = 0
-var check = 0
-var correct = 0
-input = document.getElementById("inp")
-board = document.getElementById('score')
+var pick = 0;
+var check = 0;
+var correct = 0;
+input = document.getElementById("inp");
+board = document.getElementById("score");
 
-changeImg()
+changeImg();
 
 function changeImg() {
-
-
   // Change Country
   pick = country[Math.round(Math.random() * 217)];
-  console.log(pick)
+  console.log(pick);
   document.getElementById("imgSlot").src = `img/${pick}.svg`;
-  
 }
 
 function checkAns() {
-  check++
-  if(inp.value == pick) {
-    console.log("Correct")
-    correct++
+  check++;
+  if (inp.value == pick) {
+    console.log("Correct");
+    correct++;
   } else {
-    console.log(`Answer = ${pick}`)
+    console.log(`Answer = ${pick}`);
   }
-  changeImg()
-  inp.value = ''
+  changeImg();
+  inp.value = "";
 
-  board.innerHTML = `${correct} / ${check} / ${Math.round((correct / check) * 100)}%`
+  board.innerHTML = `${correct} / ${check} / ${Math.round(
+    (correct / check) * 100
+  )}%`;
 }
-
-

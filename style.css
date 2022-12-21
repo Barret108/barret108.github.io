@@ -40,16 +40,14 @@ button {
   font-size: 10px;
 }
 
-
-
-
 #imgSlot {
- margin-top: 50px;
- border: solid;
- border-radius: 10px;
+  margin-top: 50px;
+  border: solid;
+  border-radius: 10px;
 }
 
-#wrap {}
+#wrap {
+}
 
 h1 {
   font-size: 50px;
