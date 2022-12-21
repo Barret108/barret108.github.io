@@ -233,7 +233,7 @@ function changeImg() {
   // Change Country
   pick = country[Math.round(Math.random() * 217)];
   console.log(pick)
-  document.getElementById("imgSlot").src = `${pick}.svg`;
+  document.getElementById("imgSlot").src = `img/${pick}.svg`;
   
 }
 
