@@ -41,6 +41,7 @@ button {
 }
 
 #imgSlot {
+  width: fit-content;
   margin-top: 50px;
   border: solid;
   border-radius: 10px;
@@ -55,4 +56,9 @@ h1 {
 
 p {
   font-size: 25px;
+}
+
+#showAns {
+  position: absolute;
+  top: 450px;
 }

@@ -237,15 +237,21 @@ function changeImg() {
   
 }
 
+function unshowAns() {
+  document.getElementById("showAns").innerHTML = ''
+}
+
 function checkAns() {
   check++
-  if(inp.value == pick) {
+  if(inp.value.toUpperCase == pick.toUpperCase) {
     console.log("Correct")
     correct++
   } else {
     console.log(`Answer = ${pick}`)
   }
-  changeImg()
+  setTimeout(changeImg, 2000)
+  document.getElementById("showAns").innerHTML = pick
+  setTimeout(unshowAns, 2000)
   inp.value = ''
 
   board.innerHTML = `${correct} / ${check} / ${Math.round((correct / check) * 100)}%`
