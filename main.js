@@ -256,5 +256,3 @@ function checkAns() {
 
   board.innerHTML = `${correct} / ${check} / ${Math.round((correct / check) * 100)}%`
 }
-
-
