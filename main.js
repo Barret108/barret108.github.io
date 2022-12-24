@@ -222,8 +222,8 @@ var country = [
 var pick = 0
 var check = 0
 var correct = 0
-input = document.getElementById("inp")
-board = document.getElementById('score')
+let inp = document.getElementById("inp")
+let board = document.getElementById('score')
 
 changeImg()
 
@@ -234,7 +234,7 @@ function changeImg() {
   pick = country[Math.round(Math.random() * 217)];
   console.log(pick.toUpperCase())
   document.getElementById("imgSlot").src = `img/${pick.toUpperCase()}.svg`;
-  
+
 }
 
 function unshowAns() {
@@ -243,7 +243,8 @@ function unshowAns() {
 
 function checkAns() {
   check++
-  if(inp.value.toUpperCase == pick.toUpperCase) {
+
+  if (inp.value.toUpperCase() === pick.toUpperCase()) {
     console.log("Correct")
     correct++
   } else {
